@@ -13,7 +13,8 @@
 }
 
 body{
-    background-color: rgb(236, 240, 250);
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 a{
@@ -98,7 +99,7 @@ a{
 
 .Elemento-Barra-Navegacion-Contenedor:nth-child(1) 
 .Icono-Elemento-Barra-Navegacion{
-    background-image: url('Assets/Imagenes/Inicio\ Icono\ Seleccionado.svg');
+    background-image: url('Assets/Imagenes/Inicio\ Icono.svg');
 }
 
 .Elemento-Barra-Navegacion-Contenedor:nth-child(2) 
@@ -120,7 +121,156 @@ a{
     margin-left: 0.7vw;
 }
 
-.Elemento-Barra-Navegacion-Contenedor-Seleccionado{
+
+
+/* ESTILOS PARA ICONOS SELECCIONADOS EN DIFERENTES PAGINAS*/
+
+.Elemento-Barra-Navegacion-Contenedor[data-seleccionado="true"]{
     color: var(--Color-1);
     background-color: rgb(237, 242, 255);
+} 
+
+#Contenedor-Elementos-Barra-Navegacion[data-Pagina="index"] 
+.Elemento-Barra-Navegacion-Contenedor[data-seleccionado="true"]
+.Icono-Elemento-Barra-Navegacion{
+    background-image: url('Assets/Imagenes/Inicio\ Icono\ Seleccionado.svg');
+}
+
+#Contenedor-Elementos-Barra-Navegacion[data-Pagina="Servicios"] 
+.Elemento-Barra-Navegacion-Contenedor[data-seleccionado="true"]
+.Icono-Elemento-Barra-Navegacion{
+    background-image: url('Assets/Imagenes/Servicios\ Icono\ Seleccionado.svg');
+}
+
+#Contenedor-Elementos-Barra-Navegacion[data-Pagina="Cotizacion"] 
+.Elemento-Barra-Navegacion-Contenedor[data-seleccionado="true"]
+.Icono-Elemento-Barra-Navegacion{
+    background-image: url('Assets/Imagenes/Cotizacion\ Icono\ Seleccionado.svg');
+}
+
+#Contenedor-Elementos-Barra-Navegacion[data-Pagina="Contacto"] 
+.Elemento-Barra-Navegacion-Contenedor[data-seleccionado="true"]
+.Icono-Elemento-Barra-Navegacion{
+    background-image: url('Assets/Imagenes/Contacto\ Icono\ Seleccionado.svg');
+}
+
+
+#Cuerpo{
+    background-color: rgb(236, 240, 250);
+    width: 84vw;
+    height: 100vh;
+    position: relative;
+    left: 16vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#Textos-Presentacion{
+    /* border: 1px solid black; */
+    width: 40%;
+    height: 60%;
+    text-align: center;
+    padding: 1.5vh 1vw 0 1vw;
+    font-size: 1.2vw;
+}
+
+#Textos-Presentacion h2{
+    font-size: 1.6vw;
+}
+
+#Logo-Grande{
+    /* border: 1px solid black; */
+    width: 35%;
+    height:50%;
+    margin-left: 1vw;
+    background-image: url("./Assets/Imagenes/Logo\ 2.png");
+    animation: subirBajarYRotarEnY 2.5s linear infinite;
+    /* border: 1px solid black; */
+}
+
+
+#Contenedor-Iconos-Tecnologias{
+    /* border: 1px solid black; */
+    width: 90%;
+    height:30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.Icono-Tecnologias{
+    width: 13%;
+    height: 35%;
+    /* border: 1px solid black; */
+}
+
+.Icono-Tecnologias:nth-child(1){
+    background-image: url('Assets/Imagenes/HTML\ Logo.png');
+}
+
+.Icono-Tecnologias:nth-child(2){
+    background-image: url('Assets/Imagenes/CSS\ Logo.png');
+}
+
+.Icono-Tecnologias:nth-child(3){
+    background-image: url('Assets/Imagenes/JavaScript\ Logo.png');
+}
+.Icono-Tecnologias:nth-child(4){
+    background-image: url('Assets/Imagenes/Php\ Logo.png');
+}
+
+.Icono-Tecnologias:nth-child(5){
+    background-image: url('Assets/Imagenes/Python\ Logo.png');
+}
+
+.Icono-Tecnologias:nth-child(6){
+    background-image: url('Assets/Imagenes/Django\ Logo.png');
+}
+
+.Icono-Tecnologias:nth-child(7){
+    background-image: url('Assets/Imagenes/NodeJs\ Logo.png');
+}
+
+.Icono-Tecnologias:nth-child(8){
+    background-image: url('Assets/Imagenes/Express\ Logo.png');
+}
+
+.Icono-Tecnologias:nth-child(9){
+    background-image: url('Assets/Imagenes/Socket.io\ Logo.png');
+}
+
+.Icono-Tecnologias:nth-child(10){
+    background-image: url('Assets/Imagenes/MySQL\ Logo.png');
+}
+
+.Icono-Tecnologias:nth-child(11){
+    background-image: url('Assets/Imagenes/MongoDB\ Logo.png');
+}
+
+.Icono-Tecnologias:nth-child(12){
+    background-image: url('Assets/Imagenes/Java\ Logo.png');
+}
+
+
+/* ANIMACIONES */
+
+@keyframes subirBajarYRotarEnY{
+    0%{
+       transform: none;
+    }
+
+    25%{
+        transform: translateY(1vw) rotateY(90deg);
+    }
+
+    75%{
+        transform: translateY(-2vw) rotateY(270deg) ;        
+    }
+
+    100%{
+        transform: translateY(0vw) rotateY(360deg) ;        
+    }
 }
