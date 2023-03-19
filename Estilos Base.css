@@ -1,0 +1,126 @@
+:root{
+    --Color-1: rgb(68,126,249);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background-color: rgb(236, 240, 250);
+}
+
+a{
+    text-decoration: none;
+    display: block;
+}
+
+#Barra-Navegacion{
+    background-color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 16vw;   
+    background-image: linear-gradient(to right, white 95%, #ddd); 
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+
+}
+
+#logo-contenedor{
+    display: flex;
+    font-size: 1.5vw;
+    /* border: 1px solid rgb(166, 166, 166); */
+    width: 100%;
+    height: 25%;
+    /* align-self: self-start; */
+    
+}
+
+#Logo{
+    min-width: 35%;
+    height: 100%;
+    /* border: 1px solid black; */
+    background-image: url('./Assets/Imagenes/Logo.jpg');    
+}
+
+#Texto-Logo{
+    padding-left: 0.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#Contenedor-Elementos-Barra-Navegacion{
+    /* border: 1px solid black; */
+    width: 96.5%;
+    height: 75%;
+    align-self: self-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.Elemento-Barra-Navegacion-Contenedor{
+    background-color: transparent;
+    color: black;
+    width: 100%;
+    height: 15%;
+    /* border: 1px solid black; */
+    transition: all 0.5s;
+    /* margin: 1.5vh 0; */
+    display: flex;
+    align-items: center;
+    font-size: 1.2vw;
+    justify-content: flex-start;
+    padding-left: 1.5vw; 
+
+}
+
+.Elemento-Barra-Navegacion-Contenedor:hover{
+    cursor: pointer;
+    transform: rotateY(-25deg)
+}
+
+.Icono-Elemento-Barra-Navegacion{
+    width: 20%;
+    height: 100%;
+}
+
+.Elemento-Barra-Navegacion-Contenedor:nth-child(1) 
+.Icono-Elemento-Barra-Navegacion{
+    background-image: url('Assets/Imagenes/Inicio\ Icono\ Seleccionado.svg');
+}
+
+.Elemento-Barra-Navegacion-Contenedor:nth-child(2) 
+.Icono-Elemento-Barra-Navegacion{
+    background-image: url('Assets/Imagenes/Servicios\ Icono.svg');
+}
+
+.Elemento-Barra-Navegacion-Contenedor:nth-child(3) 
+.Icono-Elemento-Barra-Navegacion{
+    background-image: url('Assets/Imagenes/Cotizacion\ Icono.svg');
+}
+
+.Elemento-Barra-Navegacion-Contenedor:nth-child(4) 
+.Icono-Elemento-Barra-Navegacion{
+    background-image: url('Assets/Imagenes/Contacto\ Icono.svg');
+}
+
+.Texto-Elemento-Barra-Navegacion{
+    margin-left: 0.7vw;
+}
+
+.Elemento-Barra-Navegacion-Contenedor-Seleccionado{
+    color: var(--Color-1);
+    background-color: rgb(237, 242, 255);
+}
