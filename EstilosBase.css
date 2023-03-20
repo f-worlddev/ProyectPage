@@ -154,8 +154,9 @@ a{
     background-image: url('Assets/Imagenes/ContactoIconoSeleccionado.svg');
 }
 
+/* CUERPO INDEX */
 
-#Cuerpo{
+#Cuerpo[data-Pagina="Index"]{
     background-color: rgb(236, 240, 250);
     width: 84vw;
     height: 100vh;
@@ -232,20 +233,14 @@ a{
 
 .Icono-Tecnologias:nth-child(7){
     background-image: url('Assets/Imagenes/NodeJsLogo.png');
-    /* width: 150px;
-    height: 100px; */
 }
 
 .Icono-Tecnologias:nth-child(8){
     background-image: url('Assets/Imagenes/ExpressLogo.png');
-    /* width: 150px;
-    height: 100px; */
 }
 
 .Icono-Tecnologias:nth-child(9){
     background-image: url('Assets/Imagenes/Socket.ioLogo.png');
-    /* width: 150px;
-    height: 100px; */
 }
 
 .Icono-Tecnologias:nth-child(10){
@@ -254,13 +249,79 @@ a{
 
 .Icono-Tecnologias:nth-child(11){
     background-image: url('Assets/Imagenes/MongoDBLogo.png');
-    width: 150px;
-    height: 150px;
 }
 
 .Icono-Tecnologias:nth-child(12){
     background-image: url('Assets/Imagenes/JavaLogo.png');
 }
+
+/* CUERPO SERVICIOS */
+
+#Cuerpo[data-Pagina="Servicios"]{
+
+    background-color: rgb(227, 251, 232);
+    max-width: 83vw;
+    min-height: 100vh;
+    padding: 1vw 0;
+    position: relative;
+    left: 16vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#Cuerpo[data-Pagina="Servicios"] h1{
+    font-size: 2vw;
+
+    margin-bottom: 3vh;
+}
+
+#Contenedor-Servicios{
+    width:100%;
+    min-height: 100vh;
+    display: grid;
+    padding: 1vw 0;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    grid-row-gap: 2vw;
+    grid-template-columns: repeat(4,18vw); 
+    grid-template-rows:  repeat(3,50vh);
+    grid-auto-flow: row;
+    grid-auto-rows: 40vh;
+}
+
+.Servicio-Contenedor{
+    border: 0.1vw solid black;
+    /* border-radius: 1vw; */
+    /* background-color: white; */
+    box-shadow: 1vw;
+    box-shadow: 0vw 0.7vw 0.8vw 0.2vw rgba(128, 127, 127, 0.3);
+    padding: 0.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;    
+}
+
+.Titulo-Servicio{
+    font-size: 1.3vw;
+    text-align: center;
+    
+}
+
+.Imagen-Servicio{
+    width: 45%;
+    height: 35%;
+    border: 1px solid black;
+}
+
+
+
+/* .Servicio-Contenedor:hover{
+    transform: translateY(-2vh) scale(1.05);
+} */
 
 
 /* ANIMACIONES */
