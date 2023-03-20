@@ -232,20 +232,20 @@ a{
 
 .Icono-Tecnologias:nth-child(7){
     background-image: url('Assets/Imagenes/NodeJsLogo.png');
-    width: 150px;
-    height: 100px;
+    /* width: 150px;
+    height: 100px; */
 }
 
 .Icono-Tecnologias:nth-child(8){
     background-image: url('Assets/Imagenes/ExpressLogo.png');
-    width: 150px;
-    height: 100px;
+    /* width: 150px;
+    height: 100px; */
 }
 
 .Icono-Tecnologias:nth-child(9){
     background-image: url('Assets/Imagenes/Socket.ioLogo.png');
-    width: 150px;
-    height: 100px;
+    /* width: 150px;
+    height: 100px; */
 }
 
 .Icono-Tecnologias:nth-child(10){
