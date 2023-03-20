@@ -50,7 +50,7 @@ a{
     min-width: 35%;
     height: 100%;
     /* border: 1px solid black; */
-    background-image: url('./Assets/Imagenes/Logo.jpg');    
+    background-image: url('./Assets/Imagenes/iconBarraN.png');
 }
 
 #Texto-Logo{
@@ -99,22 +99,22 @@ a{
 
 .Elemento-Barra-Navegacion-Contenedor:nth-child(1) 
 .Icono-Elemento-Barra-Navegacion{
-    background-image: url('Assets/Imagenes/Inicio\ Icono.svg');
+    background-image: url('Assets/Imagenes/InicioIcono.svg');
 }
 
 .Elemento-Barra-Navegacion-Contenedor:nth-child(2) 
 .Icono-Elemento-Barra-Navegacion{
-    background-image: url('Assets/Imagenes/Servicios\ Icono.svg');
+    background-image: url('Assets/Imagenes/ServiciosIcono.svg');
 }
 
 .Elemento-Barra-Navegacion-Contenedor:nth-child(3) 
 .Icono-Elemento-Barra-Navegacion{
-    background-image: url('Assets/Imagenes/Cotizacion\ Icono.svg');
+    background-image: url('Assets/Imagenes/CotizacionIcono.svg');
 }
 
 .Elemento-Barra-Navegacion-Contenedor:nth-child(4) 
 .Icono-Elemento-Barra-Navegacion{
-    background-image: url('Assets/Imagenes/Contacto\ Icono.svg');
+    background-image: url('Assets/Imagenes/ContactoIcono.svg');
 }
 
 .Texto-Elemento-Barra-Navegacion{
@@ -133,25 +133,25 @@ a{
 #Contenedor-Elementos-Barra-Navegacion[data-Pagina="index"] 
 .Elemento-Barra-Navegacion-Contenedor[data-seleccionado="true"]
 .Icono-Elemento-Barra-Navegacion{
-    background-image: url('Assets/Imagenes/Inicio\ Icono\ Seleccionado.svg');
+    background-image: url('Assets/Imagenes/InicioIconoSeleccionado.svg');
 }
 
 #Contenedor-Elementos-Barra-Navegacion[data-Pagina="Servicios"] 
 .Elemento-Barra-Navegacion-Contenedor[data-seleccionado="true"]
 .Icono-Elemento-Barra-Navegacion{
-    background-image: url('Assets/Imagenes/Servicios\ Icono\ Seleccionado.svg');
+    background-image: url('Assets/Imagenes/ServiciosIconoSeleccionado.svg');
 }
 
 #Contenedor-Elementos-Barra-Navegacion[data-Pagina="Cotizacion"] 
 .Elemento-Barra-Navegacion-Contenedor[data-seleccionado="true"]
 .Icono-Elemento-Barra-Navegacion{
-    background-image: url('Assets/Imagenes/Cotizacion\ Icono\ Seleccionado.svg');
+    background-image: url('Assets/Imagenes/CotizacionIconoSeleccionado.svg');
 }
 
 #Contenedor-Elementos-Barra-Navegacion[data-Pagina="Contacto"] 
 .Elemento-Barra-Navegacion-Contenedor[data-seleccionado="true"]
 .Icono-Elemento-Barra-Navegacion{
-    background-image: url('Assets/Imagenes/Contacto\ Icono\ Seleccionado.svg');
+    background-image: url('Assets/Imagenes/ContactoIconoSeleccionado.svg');
 }
 
 
@@ -185,7 +185,7 @@ a{
     width: 35%;
     height:50%;
     margin-left: 1vw;
-    background-image: url("./Assets/Imagenes/Logo\ 2.png");
+    background-image: url("./Assets/Imagenes/logo2.png");
     animation: subirBajarYRotarEnY 2.5s linear infinite;
     /* border: 1px solid black; */
 }
@@ -208,50 +208,58 @@ a{
 }
 
 .Icono-Tecnologias:nth-child(1){
-    background-image: url('Assets/Imagenes/HTML\ Logo.png');
+    background-image: url('Assets/Imagenes/HTMLLogo.png');
 }
 
 .Icono-Tecnologias:nth-child(2){
-    background-image: url('Assets/Imagenes/CSS\ Logo.png');
+    background-image: url('Assets/Imagenes/CSSLogo.png');
 }
 
 .Icono-Tecnologias:nth-child(3){
-    background-image: url('Assets/Imagenes/JavaScript\ Logo.png');
+    background-image: url('Assets/Imagenes/JavaScriptLogo.png');
 }
 .Icono-Tecnologias:nth-child(4){
-    background-image: url('Assets/Imagenes/Php\ Logo.png');
+    background-image: url('Assets/Imagenes/PhpLogo.png');
 }
 
 .Icono-Tecnologias:nth-child(5){
-    background-image: url('Assets/Imagenes/Python\ Logo.png');
+    background-image: url('Assets/Imagenes/PythonLogo.png');
 }
 
 .Icono-Tecnologias:nth-child(6){
-    background-image: url('Assets/Imagenes/Django\ Logo.png');
+    background-image: url('Assets/Imagenes/DjangoLogo.png');
 }
 
 .Icono-Tecnologias:nth-child(7){
-    background-image: url('Assets/Imagenes/NodeJs\ Logo.png');
+    background-image: url('Assets/Imagenes/NodeJsLogo.png');
+    /* width: 150px;
+    height: 100px; */
 }
 
 .Icono-Tecnologias:nth-child(8){
-    background-image: url('Assets/Imagenes/Express\ Logo.png');
+    background-image: url('Assets/Imagenes/ExpressLogo.png');
+    /* width: 150px;
+    height: 100px; */
 }
 
 .Icono-Tecnologias:nth-child(9){
-    background-image: url('Assets/Imagenes/Socket.io\ Logo.png');
+    background-image: url('Assets/Imagenes/Socket.ioLogo.png');
+    /* width: 150px;
+    height: 100px; */
 }
 
 .Icono-Tecnologias:nth-child(10){
-    background-image: url('Assets/Imagenes/MySQL\ Logo.png');
+    background-image: url('Assets/Imagenes/MySQLLogo.png');
 }
 
 .Icono-Tecnologias:nth-child(11){
-    background-image: url('Assets/Imagenes/MongoDB\ Logo.png');
+    background-image: url('Assets/Imagenes/MongoDBLogo.png');
+    width: 150px;
+    height: 150px;
 }
 
 .Icono-Tecnologias:nth-child(12){
-    background-image: url('Assets/Imagenes/Java\ Logo.png');
+    background-image: url('Assets/Imagenes/JavaLogo.png');
 }
 
 
