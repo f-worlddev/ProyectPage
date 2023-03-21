@@ -312,9 +312,80 @@ a{
 }
 
 .Imagen-Servicio{
-    width: 45%;
+    width: 90%;
     height: 35%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    border-radius: 1vw;
+    box-shadow: 0  0 0.5vw 0.5vw rgba(0,0,0,0.2)inset;
+}
+
+
+.Servicio-Contenedor:nth-child(1) .Imagen-Servicio{
+    background-image: 
+        url('./Assets/Imagenes/PaginaWebIcono.svg'),
+        linear-gradient(to left top, rgb(48, 41, 255),rgb(63, 255, 223));
+    
+}
+
+.Servicio-Contenedor:nth-child(2) .Imagen-Servicio{
+    background-image: 
+        url('./Assets/Imagenes/PaginaWebAdministrable.png'),
+        linear-gradient(to left top, rgb(255, 41, 41),rgb(69, 23, 255));
+}
+
+.Servicio-Contenedor:nth-child(3) .Imagen-Servicio{
+    background-image: 
+        url('./Assets/Imagenes/TiendaVirtualIcono.svg'),
+        linear-gradient(to left top, rgb(48, 41, 255),rgb(63, 255, 223));
+}
+
+.Servicio-Contenedor:nth-child(4) .Imagen-Servicio{
+    background-image: 
+        url('./Assets/Imagenes/DiseñoAPaginaHTMLIcono.png'),
+        linear-gradient(to left top, rgb(48, 41, 255),rgb(63, 255, 223));
+
+}
+
+.Servicio-Contenedor:nth-child(5) .Imagen-Servicio{
+    background-image: 
+        url('./Assets/Imagenes/ActualizacionPaginasWebIcono.png'),
+        linear-gradient(to left top, rgb(48, 41, 255),rgb(63, 255, 223));
+}
+
+.Servicio-Contenedor:nth-child(6) .Imagen-Servicio{
+    background-image: 
+        url('./Assets/Imagenes/PaginasWebDistintosDispositivosIcono.png'),
+        linear-gradient(to left top, rgb(48, 41, 255),rgb(63, 255, 223));
+}
+
+.Servicio-Contenedor:nth-child(7) .Imagen-Servicio{
+    background-image: 
+        url('./Assets/Imagenes/ApiIcono.png'),
+        linear-gradient(to left top, rgb(48, 41, 255),rgb(63, 255, 223));
+}
+
+.Servicio-Contenedor:nth-child(8) .Imagen-Servicio{
+    background-image: 
+        url('./Assets/Imagenes/BaseDeDatosIcono.png'),
+        linear-gradient(to left top, rgb(48, 41, 255),rgb(63, 255, 223));
+}
+
+.Servicio-Contenedor:nth-child(9) .Imagen-Servicio{
+    background-image: 
+        url('./Assets/Imagenes/SeguridadIcono.png'),
+        linear-gradient(to left top, rgb(48, 41, 255),rgb(63, 255, 223));
+}
+
+.Servicio-Contenedor:nth-child(10) .Imagen-Servicio{
+    background-image: 
+        url('./Assets/Imagenes/FuncionalidadesIcono.png'),
+        linear-gradient(to left top, rgb(48, 41, 255),rgb(63, 255, 223));
+}
+
+.Servicio-Contenedor:nth-child(11) .Imagen-Servicio{
+    background-image: 
+        url('./Assets/Imagenes/SoporteIcono.png'),
+        linear-gradient(to left top, rgb(48, 41, 255),rgb(63, 255, 223));
 }
 
 
