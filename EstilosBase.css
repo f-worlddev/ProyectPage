@@ -259,7 +259,8 @@ a{
 
 #Cuerpo[data-Pagina="Servicios"]{
 
-    background-color: rgb(227, 251, 232);
+    background-color: rgb(241, 241, 241);
+
     max-width: 83vw;
     min-height: 100vh;
     padding: 1vw 0;
@@ -275,27 +276,36 @@ a{
 #Cuerpo[data-Pagina="Servicios"] h1{
     font-size: 2vw;
 
-    margin-bottom: 3vh;
+    margin: 3vh 0;
 }
 
 #Contenedor-Servicios{
-    width:100%;
+    max-width:100%;
     min-height: 100vh;
-    display: grid;
-    padding: 1vw 0;
+    /* padding: 1vw 0; */
+    /* display: grid;
+
     justify-content: space-evenly;
     align-content: space-evenly;
     grid-row-gap: 2vw;
     grid-template-columns: repeat(4,18vw); 
     grid-template-rows:  repeat(3,50vh);
     grid-auto-flow: row;
-    grid-auto-rows: 40vh;
+    grid-auto-rows: 40vh; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+
 }
 
 .Servicio-Contenedor{
-    border: 0.1vw solid black;
+    /* border: 0.1vw solid black; */
     /* border-radius: 1vw; */
     /* background-color: white; */
+    width: 17vw;
+    height: 50vh;
+    margin: 1vw;
     box-shadow: 1vw;
     box-shadow: 0vw 0.7vw 0.8vw 0.2vw rgba(128, 127, 127, 0.3);
     padding: 0.5vw;
@@ -303,6 +313,7 @@ a{
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;    
+    background-color: white;
 }
 
 .Titulo-Servicio{
@@ -315,10 +326,13 @@ a{
     width: 90%;
     height: 35%;
     /* border: 1px solid black; */
-    border-radius: 1vw;
-    box-shadow: 0  0 0.5vw 0.5vw rgba(0,0,0,0.2)inset;
+    border-radius: 1vw;    
 }
 
+.Imagen-Servicio:hover{
+    box-shadow: 0  0 0.5vw 0.5vw rgba(0,0,0,0.2)inset;
+    transform: scale(1.05);
+}
 
 .Servicio-Contenedor:nth-child(1) .Imagen-Servicio{
     background-image: 
@@ -330,7 +344,9 @@ a{
 .Servicio-Contenedor:nth-child(2) .Imagen-Servicio{
     background-image: 
         url('./Assets/Imagenes/PaginaWebAdministrable.png'),
-        linear-gradient(to left top, rgb(255, 41, 41),rgb(69, 23, 255));
+        linear-gradient(to left top, rgb(48, 41, 255),rgb(63, 255, 223));
+        /* url('./Assets/Imagenes/PaginaWebAdministrable.png'),
+        linear-gradient(to left top, rgb(255, 41, 41),rgb(69, 23, 255)); */
 }
 
 .Servicio-Contenedor:nth-child(3) .Imagen-Servicio{
