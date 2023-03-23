@@ -259,8 +259,13 @@ a{
 
 #Cuerpo[data-Pagina="Servicios"]{
 
+<<<<<<< HEAD
     background-color: rgb(236, 240, 250);
 
+=======
+    background-color: rgb(241, 241, 241);
+    background-color: rgb(236, 240, 250);
+>>>>>>> 597f39728daca0d81b0e165f9cda3489704963c0
     max-width: 83vw;
     min-height: 100vh;
     padding: 1vw 0;
@@ -326,18 +331,21 @@ a{
     width: 90%;
     height: 35%;
     /* border: 1px solid black; */
-    border-radius: 1vw;    
+    border-radius: 1vw;   
+    transition: 0.3s; 
 }
 
 .Imagen-Servicio:hover{
     box-shadow: 0  0 0.5vw 0.5vw rgba(0,0,0,0.2)inset;
     transform: scale(1.05);
+    cursor: pointer;
+    border-radius: 50%;
 }
 
 .Servicio-Contenedor:nth-child(1) .Imagen-Servicio{
     background-image: 
         url('./Assets/Imagenes/PaginaWebIcono.svg'),
-        linear-gradient(to left top, rgb(48, 41, 255),rgb(63, 255, 223));
+        linear-gradient(to left top, rgb(41, 255, 141),rgb(63, 255, 223));
     
 }
 
@@ -431,65 +439,3 @@ a{
     }
 }
 
-/*Codigo de la seccion de cotizaciones*/
-.divFormCotizacion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.divFormCotizacion > h1 {
-    margin-top: 30px;
-}
-
-.form-cotizacion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    margin-top: 20px;
-}
-
-#imgFormCotizacion {
-    width: 40%;
-}
-
-.labelsFormCotizacion {
-    font-size: 30px;
-    font-weight: 400;
-}
-
-.inputsFormCotizacion {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 30px;
-    width: 50%;
-    height: 30px;
-    border: 1px solid black;
-    font-size: 20px;
-    padding: 20px;
-}
-
-#mensajeTextA {
-    border: 1px solid black;
-    border-radius: 30px;
-    padding: 20px;
-    font-size: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px
-}
-
-#buttonFormCotizacion {
-    margin-top: 20px;
-    color: white;
-    width: 250px;
-    height: 40px;
-    border: 1px solid black;
-    border-radius: 20px;
-    margin-bottom: 50px;
-    font-size: 20px;
-    background-color: rgb(68,126,249);
-}
