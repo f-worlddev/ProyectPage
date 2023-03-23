@@ -259,8 +259,13 @@ a{
 
 #Cuerpo[data-Pagina="Servicios"]{
 
+<<<<<<< HEAD
+    background-color: rgb(236, 240, 250);
+
+=======
     background-color: rgb(241, 241, 241);
     background-color: rgb(236, 240, 250);
+>>>>>>> 597f39728daca0d81b0e165f9cda3489704963c0
     max-width: 83vw;
     min-height: 100vh;
     padding: 1vw 0;
@@ -446,6 +451,8 @@ a{
     }
 }
 
+<<<<<<< HEAD
+=======
 @keyframes bordeAnimado {
     0%{
         border-image: linear-gradient(to left, rgb(48, 41, 255),rgb(63, 255, 223)) 10;
@@ -460,3 +467,4 @@ a{
     }
 
 }
+>>>>>>> 1f58c54cd66f897f883e0658e88453c177a87d69
