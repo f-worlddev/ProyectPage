@@ -7,7 +7,6 @@
     <title>FreelancerWorldDev</title>
     <link rel="shortcut icon" href="./Assets/Imagenes/logo2.png" type="image/x-icon">
     <link rel="stylesheet" href="EstilosBase.css">
-    <link rel="stylesheet" href="Assets/CSS/cssExtra.css">
 </head>
 <body style="background-color: rgb(236, 240, 250);">
     
@@ -21,7 +20,7 @@
         <aside id="Barra-Navegacion">
 
             <div id="logo-contenedor">
-                <div id="Logo"></div>
+                <a id="Logo" href="index.html"></a>
                 <span id="Texto-Logo">Freelancer World Developers</span>
             </div>
 
@@ -55,26 +54,56 @@
 
         </aside>
 
-        <div id="Cuerpo" data-Pagina="Cotizacion" class="divFormCotizacion">
+        <div id="Cuerpo" data-Pagina="Cotizacion">
 
-            <h1>Envianos una solicitud de cotizacion</h1>
+            <h1 id="Titulo-Cotizacion">Envianos una solicitud de cotizacion</h1>
 
-            <form action="#" method="post" class="form-cotizacion">
+            <div id="Contenedor-Formulario">
 
-                <img src="/Assets/Imagenes/formulario-cotizacion.jpg" id="imgFormCotizacion">
+                <div id="Imagen-Formulario"></div>
 
-                <label for="nombreF" class="labelsFormCotizacion">Nombre</label>
-                <input type="text" id="nombreF" class="inputsFormCotizacion">
+                <form action="#" method="post" id="Formulario-Cotizacion">
+                    
+                    <div class="Contenedor-Input-Formulario">
+                        <label for="Nombre">Nombre</label>
+                        <input type="text" name="Nombre" id="Entrada-nombre" placeholder="Coloca tu nombre" class="input-Formulario-Cotizacion">
+                    </div>
 
-                <label for="correoF" class="labelsFormCotizacion">Correo electronico</label>
-                <input type="email" id="correoF" class="inputsFormCotizacion">
+                    <div class="Contenedor-Input-Formulario">       
+                        <label for="CorreoElectronico">Correo Electronico</label>                 
+                        <input type="email" placeholder="Coloca tu correo Electronico" name="CorreoElectronico" class="input-Formulario-Cotizacion">
+                    </div>                    
+                    <div class="Contenedor-Input-Formulario">
+                        <label for="Servicio">Elija un Servicio</label>
+                        <select name="Servicio" id="Servicios Disponibles" class="input-Formulario-Cotizacion">
+                            <option value="PAGINA WEB PARA NEGOCIO">PAGINA WEB PARA NEGOCIO</option>
+                            <option value="PAGINA WEB ADMINISTRABLE PARA NEGOCIO">PAGINA WEB ADMINISTRABLE PARA NEGOCIO</option>
+                            <option value="TIENDA VIRTUAL">TIENDA VIRTUAL</option>
+                            <option value="TRADUCCION DE DISEÑO A PAGINA HTML">TRADUCCION DE DISEÑO A PAGINA HTML</option>
+                            <option value="ACTUALIZACION DE PAGINA WEB">ACTUALIZACION DE PAGINA WEB</option>
+                            <option value="ADAPTA TU WEB PARA TODO TIPO DE DISPOSITIVOS">ADAPTA TU WEB PARA TODO TIPO DE DISPOSITIVOS</option>
+                            <option value="DESARROLLO E INTEGRACION DE APIs">DESARROLLO E INTEGRACION DE APIs</option>
+                            <option value="DESARROLLO E INTEGRACION DE BASES DE DATOS">DESARROLLO E INTEGRACION DE BASES DE DATOS</option>
+                            <option value="IMPLEMENTACION DE SEGURIDAD A SUS SITIOS Y APLICACIONES WEB">IMPLEMENTACION DE SEGURIDAD A SUS SITIOS Y APLICACIONES WEB</option>
+                            <option value="INTEGRACION DE FUNCIONALIDADES EN PAGINAS WEB">INTEGRACION DE FUNCIONALIDADES EN PAGINAS WEB</option>
+                            <option value="SOPORTE DE APLICACIONES Y PAGINAS WEB FRONTED Y BACKEND">SOPORTE DE APLICACIONES Y PAGINAS WEB FRONTED Y BACKEND</option>
+                        </select>
+                    </div>
 
-                <label for="mensajeF" class="labelsFormCotizacion">Mensaje</label>
-                <textarea name="" id="mensajeTextA" cols="75" rows="15"></textarea>
+                    <div class="Contenedor-Input-Formulario">    
+                        <label for="Servicio">Descripcion:</label>
+                        <textarea name="Descripcion" id="Descripcion-Formulario-Cotizacion" cols="30" rows="10" placeholder="Ingrese una breve descripcion de lo que quiere"></textarea>
+                    </div>
 
-                <input type="submit" value="enviar" id="buttonFormCotizacion">
+                    <input type="submit" value="ENVIAR">
 
-            </form>
+                </form>
+
+            
+
+            </div>
+
+
 
         </div>
 

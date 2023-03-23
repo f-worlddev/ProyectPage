@@ -1,5 +1,5 @@
 :root{
-    --Color-1: rgb(68,126,249);
+    --Color-1: rgb(59, 156, 252);
 }
 
 *{
@@ -10,6 +10,10 @@
     background-size: contain;
     background-position: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+textarea{
+    resize: none;
 }
 
 body{
@@ -427,11 +431,75 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+}
+
+#Titulo-Cotizacion{
+    margin:0.5vw 0 1.5vw 0 ;
+}
+
+#Contenedor-Formulario{
+    width: 95%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+#Imagen-Formulario{
+    background-image: url("./Assets/Imagenes/formulario-cotizacion.jpg");
+    width: 42%;
+    height: 80vh;
 }
 
 
+#Formulario-Cotizacion{
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
 
+#Formulario-Cotizacion input,
+#Formulario-Cotizacion textarea,
+#Formulario-Cotizacion select{
+    border-radius: 0.5vw;
+    font-size: 1vw;
+}
+
+.Contenedor-Input-Formulario{
+    display: flex;
+    flex-direction: column;
+    width: 77%;
+}
+
+.input-Formulario-Cotizacion{
+    height: 6vh;
+    padding-left: 0.5vw;
+}
+
+
+#Descripcion-Formulario-Cotizacion{
+    padding: 0.5vw;
+}
+
+#Formulario-Cotizacion input[type="submit"]{
+    background-color: var(--Color-1);
+    padding: 1vw 2vw;
+    border:none;
+    color: white;
+    font-size: 1.1vw;
+}
+
+#Formulario-Cotizacion input[type="submit"]:hover{
+    cursor:pointer;
+}
+
+#Formulario-Cotizacion label{
+    margin-bottom: 0.5vw;
+}
 
 /* ANIMACIONES */
 
