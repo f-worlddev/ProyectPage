@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="./Assets/Imagenes/logo2.png" type="image/x-icon">
     <link rel="stylesheet" href="EstilosBase.css">
 </head>
-<body>
+<body style="background-color: rgb(236, 240, 250);">
     
     <div id="Animacion-Presentacion">
 
@@ -21,7 +21,7 @@
 
             <div id="logo-contenedor">
                 <div id="Logo"></div>
-                <span id="Texto-Logo">Freelancer Development World</span>
+                <span id="Texto-Logo">Freelancer World Developers</span>
             </div>
 
             <div id="Contenedor-Elementos-Barra-Navegacion" data-Pagina="Cotizacion">
@@ -54,11 +54,24 @@
 
         </aside>
 
-        <div id="Cuerpo"  data-Pagina="Cotizacion">
+        <div id="Cuerpo" data-Pagina="Cotizacion" class="divFormCotizacion">
 
-            <form action="#" method="post">
+            <h1>Envianos una solicitud de cotizacion</h1>
 
+            <form action="#" method="post" class="form-cotizacion">
 
+                <img src="/Assets/Imagenes/formulario-cotizacion.jpg" id="imgFormCotizacion">
+
+                <label for="nombreF" class="labelsFormCotizacion">Nombre</label>
+                <input type="text" id="nombreF" class="inputsFormCotizacion">
+
+                <label for="correoF" class="labelsFormCotizacion">Correo electronico</label>
+                <input type="email" id="correoF" class="inputsFormCotizacion">
+
+                <label for="mensajeF" class="labelsFormCotizacion">Mensaje</label>
+                <textarea name="" id="mensajeTextA" cols="75" rows="15"></textarea>
+
+                <input type="submit" value="enviar" id="buttonFormCotizacion">
 
             </form>
 
