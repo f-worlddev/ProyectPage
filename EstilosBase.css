@@ -304,7 +304,7 @@ a{
     /* border-radius: 1vw; */
     /* background-color: white; */
     width: 17vw;
-    height: 50vh;
+    min-height: 50vh;
     margin: 1vw;
     box-shadow: 1vw;
     box-shadow: 0vw 0.7vw 0.8vw 0.2vw rgba(128, 127, 127, 0.3);
@@ -314,42 +314,54 @@ a{
     align-items: center;
     justify-content: space-evenly;    
     background-color: white;
+    border-bottom: 0.7vw solid white;
+    transition: all 0.3s;
 }
 
 .Titulo-Servicio{
     font-size: 1.3vw;
     text-align: center;
-    
+    margin: 1vw;
 }
 
 .Imagen-Servicio{
     width: 90%;
-    height: 35%;
+    height: 17.5vh;
     /* border: 1px solid black; */
     border-radius: 1vw;   
     transition: 0.3s; 
+    margin: 1vw;
 }
 
-.Imagen-Servicio:hover{
+.Texto-Servicio{
+    display: none;
+    font-size: 1vw;
+    padding: 0.5vw;
+    text-align: center;
+}
+
+.Servicio-Contenedor:hover .Imagen-Servicio{
     box-shadow: 0  0 0.5vw 0.5vw rgba(0,0,0,0.2)inset;
     transform: scale(1.05);
-    cursor: pointer;
-    border-radius: 50%;
+    border-radius: 30%;
 }
+
+.Servicio-Contenedor:hover{
+    animation: bordeAnimado 1.5s linear infinite;
+    cursor: pointer;
+}
+
 
 .Servicio-Contenedor:nth-child(1) .Imagen-Servicio{
     background-image: 
         url('./Assets/Imagenes/PaginaWebIcono.svg'),
-        linear-gradient(to left top, rgb(41, 255, 141),rgb(63, 255, 223));
-    
+        linear-gradient(to left top, rgb(48, 41, 255),rgb(63, 255, 223));
 }
 
 .Servicio-Contenedor:nth-child(2) .Imagen-Servicio{
     background-image: 
         url('./Assets/Imagenes/PaginaWebAdministrable.png'),
         linear-gradient(to left top, rgb(48, 41, 255),rgb(63, 255, 223));
-        /* url('./Assets/Imagenes/PaginaWebAdministrable.png'),
-        linear-gradient(to left top, rgb(255, 41, 41),rgb(69, 23, 255)); */
 }
 
 .Servicio-Contenedor:nth-child(3) .Imagen-Servicio{
@@ -432,4 +444,19 @@ a{
     100%{
         transform: translateY(0vw) rotateY(360deg) ;        
     }
+}
+
+@keyframes bordeAnimado {
+    0%{
+        border-image: linear-gradient(to left, rgb(48, 41, 255),rgb(63, 255, 223)) 10;
+    }
+
+    50%{
+        border-image: linear-gradient(to right, rgb(48, 41, 255),rgb(63, 255, 223)) 10;
+    }
+
+    100%{
+        border-image: linear-gradient(to left, rgb(48, 41, 255),rgb(63, 255, 223)) 10;
+    }
+
 }
