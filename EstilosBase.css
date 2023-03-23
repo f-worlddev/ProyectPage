@@ -260,7 +260,7 @@ a{
 #Cuerpo[data-Pagina="Servicios"]{
 
     background-color: rgb(241, 241, 241);
-
+    background-color: rgb(236, 240, 250);
     max-width: 83vw;
     min-height: 100vh;
     padding: 1vw 0;
@@ -326,18 +326,21 @@ a{
     width: 90%;
     height: 35%;
     /* border: 1px solid black; */
-    border-radius: 1vw;    
+    border-radius: 1vw;   
+    transition: 0.3s; 
 }
 
 .Imagen-Servicio:hover{
     box-shadow: 0  0 0.5vw 0.5vw rgba(0,0,0,0.2)inset;
     transform: scale(1.05);
+    cursor: pointer;
+    border-radius: 50%;
 }
 
 .Servicio-Contenedor:nth-child(1) .Imagen-Servicio{
     background-image: 
         url('./Assets/Imagenes/PaginaWebIcono.svg'),
-        linear-gradient(to left top, rgb(48, 41, 255),rgb(63, 255, 223));
+        linear-gradient(to left top, rgb(41, 255, 141),rgb(63, 255, 223));
     
 }
 
