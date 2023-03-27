@@ -66,7 +66,7 @@
         if ($connection->query($queryFormat) === TRUE) {
             
             echo "<title>Cotizacion eviada</title>";
-            echo "<div style='display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; height: 100%; background-color: rgb(236, 240, 250);'>";
+            echo "<div style='display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; width: 100%; height: 100%; background-color: rgb(236, 240, 250);'>";
             echo "<img src='$urlImg'>";
             echo "<h2>Tu cotizacion se ha enviado correctamente</h2>";
             echo "<p>Nuestro equipo tardara lo menos posible en responderte a tu correo, gracias!</p>";
@@ -76,7 +76,7 @@
         } else {
 
             echo "<title>Error interno</title>";
-            echo "<div style='display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; height: 100%; background-color: rgb(236, 240, 250);'>";
+            echo "<div style='display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; width: 100%; height: 100%; background-color: rgb(236, 240, 250);'>";
             echo "<img src='$urlImg'>";
             echo "<h2>Error interno del servidor al procesar los datos</h2>";
             echo "<p>$connection->error</p>";
@@ -88,7 +88,7 @@
     } else {
 
         echo "<title>Datos invalidos</title>";
-        echo "<div style='display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; height: 100%; background-color: rgb(236, 240, 250);'>";
+        echo "<div style='display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; width: 100%; height: 100%; background-color: rgb(236, 240, 250);'>";
         echo "<img src='$urlImg'>";
         echo "<h2>Datos enviados invalidos</h2>";
         echo "<p>Puede que hayas enviado campos del fomulario vacios o con mas caracteres de los aceptados, vuelve a intentarlo...</p>";
