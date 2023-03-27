@@ -8,6 +8,8 @@
     );
 
     $passCrypt = password_hash($adminCredenciales["password"], PASSWORD_DEFAULT);
+    
+    echo "<body style='margin: 0px'>";
 
     echo "<div style='display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; width: 100%; height: 100%; background-color: rgb(236, 240, 250);'>";
 
@@ -27,6 +29,8 @@
     echo "</form>";
     
     echo "</div>";
+
+    echo "</body>";
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
