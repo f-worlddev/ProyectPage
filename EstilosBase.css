@@ -1,3 +1,5 @@
+@import url("./Assets/Fuentes/ICONOS/style.css");
+
 :root{
     --Color-1: rgb(59, 156, 252);
 }
@@ -500,6 +502,69 @@ a{
 #Formulario-Cotizacion label{
     margin-bottom: 0.5vw;
 }
+
+#Cuerpo[data-Pagina="Contacto"]{
+    background-color: rgb(236, 240, 250);
+    max-width: 83vw;
+    min-height: 100vh;
+    padding: 1vw 0;
+    position: relative;
+    left: 16vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#Contenedor-Contacto, #Contenedor-Redes-Sociales{
+    height: 30vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+a[class^=icon]{
+    font-size: 4vw;
+}
+
+.contenedor-iconos{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 70%;
+}
+
+#Contenedor-Contacto a[class^=icon]:nth-child(1){
+    color: rgb(97, 208, 71);
+}
+
+#Contenedor-Redes-Sociales a[class^=icon]:nth-child(1){
+    color: rgb(53, 53, 148);
+}
+
+
+#CorreoElectronico{
+    font-size: 1.6vw;
+    display: none;
+    transition: all 0.5s;
+}
+
+
+a[class^=icon]:hover{
+    transition: all 0.2s ease-out;
+    transform: rotateZ(-370deg) scale(1.2);
+}
+
+.desplegar{
+    display:block;
+}
+
+/* #Contenedor-Contacto a[class^=icon]:nth-child(2):hover + #CorreoElectronico, #CorreoElectronico:hover{
+    display: block;
+} */
+
 
 /* ANIMACIONES */
 
