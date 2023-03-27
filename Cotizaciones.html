@@ -62,20 +62,21 @@
 
                 <div id="Imagen-Formulario"></div>
 
-                <form action="#" method="post" id="Formulario-Cotizacion">
+                <form action="./phpCode/getDates.php" method="POST" id="Formulario-Cotizacion">
                     
                     <div class="Contenedor-Input-Formulario">
                         <label for="Nombre">Nombre</label>
-                        <input type="text" name="Nombre" id="Entrada-nombre" placeholder="Coloca tu nombre" class="input-Formulario-Cotizacion">
+                        <input name="nombreUserForm" type="text" id="Entrada-nombre" placeholder="Coloca tu nombre" class="input-Formulario-Cotizacion">
                     </div>
 
                     <div class="Contenedor-Input-Formulario">       
                         <label for="CorreoElectronico">Correo Electronico</label>                 
-                        <input type="email" placeholder="Coloca tu correo Electronico" name="CorreoElectronico" class="input-Formulario-Cotizacion">
-                    </div>                    
+                        <input  name="emailUserForm" type="email" placeholder="Coloca tu correo Electronico" class="input-Formulario-Cotizacion">
+                    </div>
+
                     <div class="Contenedor-Input-Formulario">
                         <label for="Servicio">Elija un Servicio</label>
-                        <select name="Servicio" id="Servicios Disponibles" class="input-Formulario-Cotizacion">
+                        <select name="serviceSelectedForm" id="Servicios Disponibles" class="input-Formulario-Cotizacion">
                             <option value="PAGINA WEB PARA NEGOCIO">PAGINA WEB PARA NEGOCIO</option>
                             <option value="PAGINA WEB ADMINISTRABLE PARA NEGOCIO">PAGINA WEB ADMINISTRABLE PARA NEGOCIO</option>
                             <option value="TIENDA VIRTUAL">TIENDA VIRTUAL</option>
@@ -92,18 +93,14 @@
 
                     <div class="Contenedor-Input-Formulario">    
                         <label for="Servicio">Descripcion:</label>
-                        <textarea name="Descripcion" id="Descripcion-Formulario-Cotizacion" cols="30" rows="10" placeholder="Ingrese una breve descripcion de lo que quiere"></textarea>
+                        <textarea name="descriptionMessageForm" id="Descripcion-Formulario-Cotizacion" cols="30" rows="10" placeholder="Ingrese una breve descripcion de lo que quiere"></textarea>
                     </div>
 
                     <input type="submit" value="ENVIAR">
 
                 </form>
 
-            
-
             </div>
-
-
 
         </div>
 
