@@ -65,6 +65,7 @@
 
         if ($connection->query($queryFormat) === TRUE) {
             
+            echo "<title>Cotizacion eviada</title>";
             echo "<div style='display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; height: 100%; background-color: rgb(236, 240, 250);'>";
             echo "<img src='$urlImg'>";
             echo "<h2>Tu cotizacion se ha enviado correctamente</h2>";
@@ -74,6 +75,7 @@
 
         } else {
 
+            echo "<title>Error interno</title>";
             echo "<div style='display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; height: 100%; background-color: rgb(236, 240, 250);'>";
             echo "<img src='$urlImg'>";
             echo "<h2>Error interno del servidor al procesar los datos</h2>";
@@ -85,6 +87,7 @@
 
     } else {
 
+        echo "<title>Datos invalidos</title>";
         echo "<div style='display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; height: 100%; background-color: rgb(236, 240, 250);'>";
         echo "<img src='$urlImg'>";
         echo "<h2>Datos enviados invalidos</h2>";
