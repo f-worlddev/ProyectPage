@@ -2,9 +2,10 @@
 
     $urlImg = "../../Assets/Imagenes/iconBarraN.png";
 
+    //Credenciales de usuario administrador:
     $adminCredenciales = array(
-        "usuario" => "rt99",
-        "password" => "99rt"
+        "usuario" => "none",
+        "password" => "none"
     );
 
     $passCrypt = password_hash($adminCredenciales["password"], PASSWORD_DEFAULT);

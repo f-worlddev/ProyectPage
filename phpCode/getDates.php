@@ -1,10 +1,10 @@
 <?php
 
     //conexion a la db y verificacion de estado
-    $hostDataBase = "127.0.0.1";
-    $nameDataBase = "phpform";
-    $userForDataBase = "root";
-    $passwordForDataBase = "egZRXcevpsvSb59";
+    $hostDataBase = "none";
+    $nameDataBase = "none";
+    $userForDataBase = "none";
+    $passwordForDataBase = "none";
 
     $connection = mysqli_connect(
         $hostDataBase,
@@ -56,14 +56,13 @@
     
     $urlImg = "../Assets/Imagenes/iconBarraN.png";
 
-    if (strlen($nameClient) && strlen($emailClient) && strlen($serviceSelect) && strlen($descriptionMessage)) {
+    if (strlen($nameClient) > 0 && strlen($emailClient) > 0 && strlen($serviceSelect) > 0 && strlen($descriptionMessage) > 0 ) {
 
         $queryFormat = "INSERT INTO cotizaciones (
             nombre_cliente, correo_cliente, servicio_seleccionado, descripcion_mensaje) VALUES (
-            '$nameClient', '$emailClient', '$serviceSelect', '$descriptionMessage'
-        )";
+            '$nameClient', '$emailClient', '$serviceSelect', '$descriptionMessage' )";
 
-        if ($connection->query($queryFormat) === TRUE) {
+        if ($connection->query($queryFormat) === true) {
             
             echo "<title>Cotizacion eviada</title>";
             echo "<div style='display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; width: 100%; height: 100%; background-color: rgb(236, 240, 250);'>";
@@ -73,12 +72,14 @@
             echo "<a href='/'><button style='background-color: rgb(59, 156, 252); padding: 1vw 2vw; border: none; color: white; font-size: 1.1vw; border-radius: 10px; cursor: pointer'>vuelve atras</button></a>";
             echo "</div>";
 
+            $connection->close();
+
         } else {
 
             echo "<title>Error interno</title>";
             echo "<div style='display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; width: 100%; height: 100%; background-color: rgb(236, 240, 250);'>";
             echo "<img src='$urlImg'>";
-            echo "<h2>Error interno del servidor al procesar los datos</h2>";
+            echo "<h2>Error interno del servidor al procesar los datos, puede que hayas intentado ingresar valores de tipos diferentes a los esperados, no se creara otra vez!</h2>";
             echo "<p>$connection->error</p>";
             echo "<a href='/'><button style='background-color: rgb(59, 156, 252); padding: 1vw 2vw; border: none; color: white; font-size: 1.1vw; border-radius: 10px; cursor: pointer'>vuelve atras</button></a>";
             echo "</div>";
