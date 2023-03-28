@@ -1,10 +1,10 @@
 <?php
 
     //conexion a la db y verificacion de estado
-    $hostDataBase = "none";
-    $nameDataBase = "none";
-    $userForDataBase = "none";
-    $passwordForDataBase = "none";
+    $hostDataBase = "bd9q3f8enmnazxy6h4dr-mysql.services.clever-cloud.com";
+    $nameDataBase = "bd9q3f8enmnazxy6h4dr";
+    $userForDataBase = "u9lu7hrukyemg5yq";
+    $passwordForDataBase = "hCAOr69x7mpgZpVjNzR8";
 
     $connection = mysqli_connect(
         $hostDataBase,

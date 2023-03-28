@@ -2,10 +2,10 @@
 
     session_start();
 
-    $hostDataBase = "none";
-    $nameDataBase = "none";
-    $userForDataBase = "none";
-    $passwordForDataBase = "none";
+    $hostDataBase = "bd9q3f8enmnazxy6h4dr-mysql.services.clever-cloud.com";
+    $nameDataBase = "bd9q3f8enmnazxy6h4dr";
+    $userForDataBase = "u9lu7hrukyemg5yq";
+    $passwordForDataBase = "hCAOr69x7mpgZpVjNzR8";
 
     $connection = mysqli_connect(
         $hostDataBase,
@@ -20,7 +20,7 @@
     //     echo "<h2>==> The connection to data base sucessfull" . "</h2>";
     // }
 
-    $peticion = "SELECT * FROM $nameDataBase";
+    $peticion = "SELECT * FROM cotizaciones";
 
     $resultPetion = $connection->query($peticion);
 
