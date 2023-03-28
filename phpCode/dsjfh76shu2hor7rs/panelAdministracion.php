@@ -28,6 +28,10 @@
 
 <style>
 
+    *{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
     body {
         margin: 0px;
         width: 100%;
@@ -35,7 +39,7 @@
         background-color: rgb(236, 240, 250);
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: center;        
     }
 
     #contenedorP {
@@ -51,23 +55,38 @@
         flex-direction: column;
         flex-wrap: wrap;
         border: 1px solid black;
-        border-radius: 10px;
-        padding: 10px;
-        margin: 10px;
-        width: 50%;
+        border-radius: 1vw;
+        padding: 0.4vw;
+        background-color: white;
+        
     }
 
     #contenedorCotizaciones {
-        display: flex;
-        flex-direction: column;
-        align-items: center
+
+        max-width: 100vw;
+        padding: 0 2vw;
+        min-height: 100vh;
+        display:grid;
+        grid-template: 1fr 1fr / 1fr 1fr;
+        grid-auto-flow: row;
+        grid-auto-rows: 1fr 1fr;
+        grid-auto-columns: 1fr 1fr;
+        align-content: center;
+        align-items: center;
+        justify-content: space-around;
+        grid-gap: 2vw 2vw;
     }
 
-    #buttonDelete {
+    .buttonDelete {
         background-color: orange;
         border: none;
         border-radius: 10px;
-        padding: 10px
+        padding: 10px;
+        font-size: 1vw;
+    }
+
+    .buttonDelete:hover{
+        cursor: pointer;
     }
 
 </style>
@@ -78,7 +97,9 @@
 
     <div id="contenedorP">
     
-        <div id="contenedorCotizaciones"><?php for ($i = 0; $i < $resultPetion->num_rows; $i++) { $fila = $resultPetion->fetch_assoc() ?>
+        <div id="contenedorCotizaciones">
+            
+        <?php for ($i = 0; $i < $resultPetion->num_rows; $i++) { $fila = $resultPetion->fetch_assoc() ?>
 
             <div id="contenedorCotizacion">
 
@@ -94,19 +115,18 @@
                 <p><?php echo $fila["descripcion_mensaje"] ?></p>
                 
                 <form action="eliminarCotizacion.php?id=<?php echo $fila["id"] ?>" method="POST">
-                    <input id="buttonDelete" type="submit" value="eliminar cotizacion">
+                    <input class="buttonDelete" type="submit" value="Eliminar Cotizacion">
                 </form>
 
             </div>
 
         <?php } ?>
 
-        <center>
-            <br>
-            <a href="cerrarSession.php" style="text-decoration: none"><button style='background-color: red; padding: 1vw 2vw; border: none; color: white; font-size: 20px; border-radius: 10px; cursor: pointer; margin-bottom: 20px'>cerrar sesion</button></a>
-        </center>
-
     </div>
+    
+
+    <br>
+    <a href="cerrarSession.php" style="text-decoration: none"><button style='background-color: red; padding: 1vw 2vw; border: none; color: white; font-size: 20px; border-radius: 10px; cursor: pointer; margin-bottom: 20px'>Cerrar Sesion</button></a>
 
 <?php } else {?>
     
